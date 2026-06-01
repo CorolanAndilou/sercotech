@@ -1,17 +1,18 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap';
-import { LoginForm } from './LoginForm';
-import { ValidatedForm } from './ValidatedForm';
-import { HookForm } from './ValidateForrmDos';
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './components/organisms/Navbar';
+import Home from './pages/Home';
+
 
 function App() {
-   return (
-       <div className="App">
-           <Button variant="primary">Clic aquí</Button>
-           <LoginForm/>
-           <ValidatedForm/>
-            <HookForm/>
-       </div>
-   );
+ return (
+   <>
+     <NavBar />
+     <Routes>
+       <Route path="/" element={<Home />} />
+     </Routes>
+   </>
+ );
 }
+
+
 export default App;
