@@ -1,5 +1,5 @@
 import { Container, Row } from 'react-bootstrap';
-import products from '../data/Products';
+import products from '../data/products';
 import ProductCard from '../components/organisms/ProductCard';
 
 
