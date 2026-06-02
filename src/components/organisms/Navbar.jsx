@@ -1,22 +1,37 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import React from 'react'
+import '../../styles/organisms/navbar.css'
+import logo_light from '../../assets/logo-black.png'
+import logo_dark from '../../assets/logo-white.png'
+import search_icon_light from '../../assets/search-w.png'
+import search_icon_dark from '../../assets/search-b.png'
+import toggle_icon_light from '../../assets/night.png'
+import toggle_icon_dark from '../../assets/day.png'
 
 
-function NavBar() {
- return (
-   <Navbar bg="dark" variant="dark" expand="lg">
-     <Container>
-       <Navbar.Brand href="/">Ruteando</Navbar.Brand>
-       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-       <Navbar.Collapse id="basic-navbar-nav">
-         <Nav className="me-auto">
-           <Nav.Link href="/">Inicio</Nav.Link>
-           <Nav.Link href="/products">Productos</Nav.Link>
-         </Nav>
-       </Navbar.Collapse>
-     </Container>
-   </Navbar>
- );
+const Navbar = () => {
+  return (
+    <div className='navbar'>
+      <img src='https://sitios.sercotec.cl/centros-de-negocios/wp-content/uploads/sites/4/2021/11/cropped-logo-cdn-2021.png' alt='logo' className='logo'/>
+      <ul>
+        <li><a href='#'>Inicio</a></li>
+        <li><a href='#'>Servicios</a></li>
+        <li><a href='#'>Actualidad</a></li>
+        <li><a href='#'>Agenda</a></li>
+        <li><a href='#'>Contacto</a></li>
+      </ul>
+
+      <div className='search-box'>
+        <input type='text' placeholder='Buscar'/>
+        <img src={search_icon_light} alt=''/>
+      </div>
+
+      
+      <img src={toggle_icon_light} alt='' className='toggle-icon'/>
+      
+
+    </div>
+    
+  )
 }
 
-
-export default NavBar;
+export default Navbar
