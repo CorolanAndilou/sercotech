@@ -5,9 +5,17 @@
   font-family: sans-serif;
 }
 
-.container{
-  width: 100vw;
+html, body, #root {
+  width: 100%;
   min-height: 100vh;
-  background: #ced8ff;
-  
+  margin: 0;
+  padding: 0;
+  background-color: #ced8ff;
+}
+
+.container {
+  width: 100%; 
+  min-height: calc(100vh - 80px);
+  background-color: #ced8ff;
+  padding: 40px;
 }

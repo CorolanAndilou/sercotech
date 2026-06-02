@@ -3,9 +3,17 @@ import Navbar from './components/organisms/Navbar'
 import './index.css'
 
 const App = () => {
+
+  const [theme, setTheme] = React.useState('light');
+
   return (
-    <div className='container'>
-      <Navbar/>
+    <div>
+      <Navbar theme={theme} setTheme={setTheme} />
+
+      <div className='container'>
+        
+      </div>
+
     </div>
   )
 }

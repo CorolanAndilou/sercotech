@@ -8,16 +8,25 @@ import toggle_icon_light from '../../assets/night.png'
 import toggle_icon_dark from '../../assets/day.png'
 
 
-const Navbar = () => {
+
+
+
+const Navbar = ({ theme, setTheme }) => {
+
+  const toggle_mode = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light');
+  };
+
   return (
     <div className='navbar'>
       <img src='https://sitios.sercotec.cl/centros-de-negocios/wp-content/uploads/sites/4/2021/11/cropped-logo-cdn-2021.png' alt='logo' className='logo'/>
+
       <ul>
-        <li><a href='#'>Inicio</a></li>
-        <li><a href='#'>Servicios</a></li>
-        <li><a href='#'>Actualidad</a></li>
-        <li><a href='#'>Agenda</a></li>
-        <li><a href='#'>Contacto</a></li>
+        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Actualidad</li>
+        <li>Agenda</li>
+        <li>Contacto</li>
       </ul>
 
       <div className='search-box'>
@@ -26,7 +35,7 @@ const Navbar = () => {
       </div>
 
       
-      <img src={toggle_icon_light} alt='' className='toggle-icon'/>
+      <img onClick={()=>{toggle_mode()}} src={toggle_icon_light} alt='' className='toggle-icon'/>
       
 
     </div>
