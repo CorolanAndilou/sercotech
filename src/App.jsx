@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './components/organisms/Navbar'
+import contactos from './pages/contactos.jsx'
 import './index.css'
 
 const App = () => {

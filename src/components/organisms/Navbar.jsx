@@ -1,4 +1,5 @@
 import React from 'react'
+import contactos from '../../pages/contactos.jsx'
 import '../../styles/organisms/navbar.css'
 import logo_light from '../../assets/logo-black.png'
 import logo_dark from '../../assets/logo-white.png'
@@ -23,7 +24,7 @@ const Navbar = ({ theme, setTheme }) => {
         <li>Servicios</li>
         <li>Actualidad</li>
         <li>Agenda</li>
-        <li>Contacto</li>
+        <li><a href='../../pages/contactos.jsx'>Contacto</a></li>
       </ul>
 
       <div className='search-box'>
