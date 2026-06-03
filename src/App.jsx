@@ -7,15 +7,12 @@ const App = () => {
   const [theme, setTheme] = React.useState('light');
 
   return (
-    <div className={`${theme}`}>
-      
+    <div id={`${theme}`}>
+            
       <Navbar theme={theme} setTheme={setTheme} />
-      <div className='container'>
-        <h1>10 horas de navbar</h1>
-        
+        <div>
+          <h1>10 horas de navbar</h1>                
       </div>
-      
-
     </div>
   )
 }

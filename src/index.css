@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 
-html, body, #root {
+html, #root {
   width: 100%;
   min-height: 100vh;
   margin: 0;
@@ -25,3 +25,18 @@ html, body, #root {
   background-color: #222;
 }
 
+/*#body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #ced8ff;
+}*/
+
+#dark {
+  background-color: #222;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
