@@ -13,30 +13,34 @@ html, #root {
   background-color: #ced8ff;
 }
 
-.container {
-  width: 100%; 
-  /* min-height: calc(100vh - 80px); */
-  background-color: #ced8ff;
-  /* padding: 40px; */
-  transition: 0.5s;
-}
-
-.container.dark {
+.dark {
   background-color: #222;
+  /* color:white; */
 }
 
-/*#body {
+#body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #ced8ff;
+  /* color:black; */
+}
+
+.body-light{
+    background-color: #ced8ff;
+    color:black;
+}
+
+.body-dark{
+    background-color: #222;
+    color:white;
+}
+
+
+/*#dark {
+  background-color: #222;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }*/
-
-#dark {
-  background-color: #222;
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}

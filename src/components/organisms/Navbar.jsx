@@ -1,5 +1,6 @@
 import React from 'react'
-import contactos from '../../pages/contactos.jsx'
+import { Link } from 'react-router-dom'
+import Contactos from '../../pages/contactos.jsx'
 import '../../styles/organisms/navbar.css'
 import logo_light from '../../assets/logo-black.png'
 import logo_dark from '../../assets/logo-white.png'
@@ -9,10 +10,11 @@ import toggle_icon_light from '../../assets/night.png'
 import toggle_icon_dark from '../../assets/day.png'
 
 
-const Navbar = ({ theme, setTheme }) => {
+const Navbar = ({ theme, setTheme, body_theme, setBodyTheme }) => {
 
   const toggle_mode = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
+    body_theme === 'body-light' ? setBodyTheme('body-dark') : setBodyTheme('body-light');
   };
 
   return (
@@ -24,7 +26,7 @@ const Navbar = ({ theme, setTheme }) => {
         <li>Servicios</li>
         <li>Actualidad</li>
         <li>Agenda</li>
-        <li><a href='../../pages/contactos.jsx'>Contacto</a></li>
+        <li><Link to="/contactos">Contacto</Link></li>
       </ul>
 
       <div className='search-box'>
