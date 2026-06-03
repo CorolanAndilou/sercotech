@@ -22,7 +22,7 @@ const Navbar = ({ theme, setTheme, body_theme, setBodyTheme }) => {
       <img src='https://sitios.sercotec.cl/centros-de-negocios/wp-content/uploads/sites/4/2021/11/cropped-logo-cdn-2021.png' alt='logo' className='logo'/>
 
       <ul>
-        <li>Inicio</li>
+        <li><Link to="/Home">Inicio</Link></li>
         <li>Servicios</li>
         <li>Actualidad</li>
         <li>Agenda</li>

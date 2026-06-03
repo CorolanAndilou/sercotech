@@ -1,11 +1,12 @@
 import React from 'react'
+import { Container } from 'react-bootstrap';
 
 const Contactos = () => {
   return (
-    <div>
-      <h1>Contactos</h1>
-      <p>Esta es la página de contactos.</p>
-    </div>
+    <Container className="my-5">
+     <h1>¡Contáctanos!</h1>
+     <p>Contacto</p>
+   </Container>
   )
 }
 

@@ -4,6 +4,7 @@ import Navbar from './components/organisms/Navbar'
 import contactos from './pages/contactos.jsx'
 import './index.css'
 import Contactos from './pages/contactos.jsx'
+import Home from './pages/Home.jsx'
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
       <div className={`${theme}`}>       
         <Navbar theme={theme} setTheme={setTheme} body_theme={body_theme} setBodyTheme={setBodyTheme} />
         <Routes>
+          <Route path ="/Home" element={<Home />} />
           <Route path="/contactos" element={<Contactos />} />
         </Routes>
       </div>
