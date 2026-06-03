@@ -8,10 +8,11 @@ const App = () => {
 
   return (
     <div id={`${theme}`}>
-            
-      <Navbar theme={theme} setTheme={setTheme} />
+      <div className={`${theme}`}>       
+        <Navbar theme={theme} setTheme={setTheme} />
         <div>
-          <h1>10 horas de navbar</h1>                
+          <h1>10 horas de navbar</h1>        
+        </div>
       </div>
     </div>
   )
