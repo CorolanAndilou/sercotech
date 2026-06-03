@@ -1,7 +1,9 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/organisms/Navbar'
 import contactos from './pages/contactos.jsx'
 import './index.css'
+import Contactos from './pages/contactos.jsx'
 
 const App = () => {
 
@@ -13,10 +15,11 @@ const App = () => {
     
       <div className={`${theme}`}>       
         <Navbar theme={theme} setTheme={setTheme} body_theme={body_theme} setBodyTheme={setBodyTheme} />
-        <div>
-          <h1>10 horas de navbar</h1>        
-        </div>
+        <Routes>
+          <Route path="/contactos" element={<Contactos />} />
+        </Routes>
       </div>
+    
     
     </div>
   )
