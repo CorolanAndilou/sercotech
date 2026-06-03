@@ -15,7 +15,13 @@ html, body, #root {
 
 .container {
   width: 100%; 
-  min-height: calc(100vh - 80px);
+  /* min-height: calc(100vh - 80px); */
   background-color: #ced8ff;
-  padding: 40px;
+  /* padding: 40px; */
+  transition: 0.5s;
 }
+
+.container.dark {
+  background-color: #222;
+}
+
